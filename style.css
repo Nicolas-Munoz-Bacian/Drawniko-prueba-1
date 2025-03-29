@@ -1,0 +1,548 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-primario:#ffff;
+    --color-secundario:#f02828;
+    --color-terciario:#f5edd6;
+    --color-cuarto:#0000;
+    --color-quinto:#a9ea65;
+    --color-sexto:#b7dde2;
+    --color-septimo:#012e67;
+    --imagen-de-perfil: url(img/Mi foto.jpeg);
+    --fuente-calibri:'calibri';
+    --fuente-calibri-negrita:'calibri', 'bold';
+    --fuente-open-sans-bold: 'Open Sans', 'bold';
+    
+}
+
+body {
+    background-image: url(img/Fondo\ de\ pantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+    justify-content: space-between;
+    position: none;
+    width: auto;
+    top: 0;
+}
+/* Ajuste para pantallas pequeñas */
+
+.cabecera__logo {
+    max-width: 60px; 
+    min-width: 40px;
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    align-self: center;
+    color: var(--color-septimo);
+    margin: 5px 10px 0px;
+}
+
+.navegacion{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    background-color: var(--color-septimo);
+    color: var(--color-primario);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.navegacion__elemento a:hover {
+    font-weight:1000;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: 2px solid var(--color-septimo);
+    border-radius: 10px;
+    padding: none;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion{
+    color: var(--color-primario);
+}
+
+.presentacion__foto {
+    background-image: var(--imagen-de-perfil);
+    position: relative;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid var(--color-septimo);
+    padding: 0;
+    object-fit: contain;
+}
+
+.presentacion__contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0px;
+    align-items: center;
+    font-family: var(--fuente-calibri);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.parrafo__presentacion{
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.presentacion__titulo{
+    margin: 5px 0px;
+    justify-content: center;
+}
+
+.presentacion__subtitulo
+
+.presentacion__contenedor,
+.redes{
+    color: var(--color-primario);
+    order: 2;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.redes__img img{
+    display: flex;
+    color: var(--color-primario);
+    width:30px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.presentacion__sobre_mi__contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    font-family: var(--fuente-calibri);
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 20px;
+    background-color: var(--color-de-fondo);
+    border: 4px solid var(--color-septimo);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.parrafo__sobre__mi{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    font-family: var(--fuente-calibri);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.presentacion__contenedor__habilidades {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.habilidades{
+    color: var(--color-de-fondo);
+}
+
+.habilidades__lista {
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.habilidades__elemento {
+    margin: 10px; /* Agrega margen entre los elementos */
+    display: flex; /* Permite usar Flexbox para el elemento */
+    flex-direction: column; /* Ordena los elementos verticalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px;
+}
+
+.habilidades__nombre{
+    color: var(--color-primario);
+    font-weight: 500;
+}
+
+.habilidades__icono {
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: 100px; /* Ajusta la altura de la imagen */
+    margin-bottom: 10px; /* Agrega margen debajo de la imagen */
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones{
+    color: var(--color-de-fondo);
+}
+
+.presentacion__aficiones{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aficiones__elemento{
+    margin: 10px; /* Agrega margen entre los elementos */
+    display: flex; /* Permite usar Flexbox para el elemento */
+    flex-direction: column; /* Ordena los elementos verticalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px;
+}
+
+.aficiones__icono{
+    flex-wrap: wrap;
+    width: 50px;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aficiones__lista{
+    object-fit: contain;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; 
+}
+
+/*------------------------------ Sección de Formación académica --------------------------------*/
+
+.Formacion_academica__contenedor{
+    background-color: var(--color-septimo);
+    color: var(--color-primario);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formacion__lista{
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.formacion__titulo{
+    display: flex;
+    font-size: 30px;
+    margin: 5px 10px;
+}
+
+.formacion__icono{
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+}
+
+.formacion__elemento{
+    margin: 10px 20px 10px 20px;
+}
+
+.formacion__parrafo{
+    padding: none;
+    justify-content: flex-start;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos{
+    color: var(--color-primario);
+}
+
+.gallery{
+    color: var(--color-primario);
+}
+
+div.gallery {
+    border: 1px solid var(--color-primario);
+  }
+  
+  div.gallery:hover {
+    border: 1px solid var(--color-primario);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto{
+    background-color: var(--color-septimo);
+    color: var(--color-primario);
+    display: flex;
+}
+
+.contacto__titulo{
+    margin: 5px 10px;
+}
+
+/*------------------------------ FOOTER (RODAPIE) ---------------------------------*/
+
+.contenido_footer{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.presentación_enlaces{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_contenido{
+    display: flex;
+    color: var(--color-terciario);
+    position: initial;
+}
+
+.presentación__logo__corfo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+.presentación__logo__pastel{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+.Footer__iconos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.iconos__redes_img{
+    height: auto;
+    object-fit: contain;
+    width: 40px;
+    margin: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.derechos_de_autor_text .p_Pie_de_pagina{
+    position: initial;
+    font-size: 34%;
+    color: var(--color-terciario);
+    font-family: var(--fuente-calibri);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Pie_de_pagina{
+    background-color: var(--color-septimo);
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cabecera__logo {
+        max-width: 80px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/**Movil**/
+
+@media (min-width: 320px)(max-width: 480px){
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil {}
+
+    nav ul a{
+        font-size: 16px;
+        display: flex;
+    }
+}
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .desktop {display: none;}
+    .tablet {}
+    .movil {display: none;}
+}
+
+/**Escritorio**/
+.resolucion{
+    width: 100%;
+}
+@media (min-width: 990px) and (max-width:1290){
+    .desktop {}
+    .tablet {display: none;}
+    .movil {display: none;}
+    
+    .ul_navegacion__lista{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+    nav .ul_navegacion__lista{
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav .ul_navegacion__lista a{
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: var(--color-septimo);
+        font-family: var(--fuente-calibri-negrita) var(--color-secundario);
+    }
+}
