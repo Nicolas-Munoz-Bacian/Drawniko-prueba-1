@@ -2,215 +2,139 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawniko</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flexbox.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="img/Sello Nicolás (PNG).png" type="image/x-icon">
-    <!-- Fuente del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <link rel="shortcut icon" href="/assets/Sello Nicolás (PNG).png" type="image/x-icon">
 </head>
+<!-- Menú -->
+<div class="header-container">
+    <h1 class="header-title">DRAWNIKO</h1>
+    <img class="presentation-logo" src="/assets/Sello Nicolás (PNG).png" alt="Logo personal">
+    
+    <nav class="menu">
+        <menu class="menu_contenido">
+            <ul class="ul_menu">
+                <a class="header__menú__link" href="historia.html"><input class="btn" id="btn-historia" type="button" value="HISTORIA"></input></a>
+                <a class="header__menú__link" href="categorias.html"><input class="btn" id="btn-categorías" type="button" value="CATEGORÍAS"></input></a>
+                <a class="header__menú__link" href="contacto.html"><input class="btn" id="btn-contacto" type="button" value="CONTACTO"></input></a>
+            </ul  class="ul_menu">
+        </menu>
+    </nav>
+</div>
 
 <body>
-    <!-- Menú -->
-    <header class="cabecera">
-        <img class="cabecera__logo" src="img/Sello Nicolás (PNG).png" alt="Logo">
-        <h1 class="cabecera__titulo">DRAWING<br> NIKO</h1>
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Sección de Presentación -->
-    <section class="presentacion">
-        <div class="presentacion__contenedor">
-            <img class="presentacion__foto" src="img/Mi foto.jpeg" alt="Foto de perfil" width="200px">
-            <div class="parrafo__presentacion">
-            <h2 class="presentacion__titulo">Hola, me llamo Nicolás Muñoz Bacián y soy Diseñador Gráfico</h2>
-            <p class="presentacion__subtitulo">Soy exalumno de la carrera de Diseño técnico y profesional de la Universidad de Inacap
-                en Iquique, Región de Tarapacá, Chile.<br>
-                <br> Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+        <!-- Sección de Presentación -->
+        <section class="presentacion">
+            <div class="presentacion__contenedor">
+                <img class="presentacion__foto" src="/img/Mi foto.jpeg" alt="Foto de perfil">
+                <div class="parrafo__presentacion">
+                <h2 class="presentacion__titulo">Hola, me llamo Nicolás Muñoz Bacián y soy Diseñador Gráfico</h2>
+                <p class="presentacion__subtitulo">Soy exalumno de la carrera de Diseño técnico y profesional de la Universidad de Inacap
+                    en Iquique, Región de Tarapacá, Chile.<br>
+                </div>
+                    <div class="presentacion__contenedor__redes">
+                <ul class="redes">
+                    <li class="redes__img"><a href="https://github.com/Nicolas-Munoz-Bacian">Github <img src="/img/icons/logotipo-de-github.png" alt="Github icono"></a></li>
+                    <li class="redes__img"><a href="https://www.linkedin.com/in/nicol%C3%A1s-mu%C3%B1oz-baci%C3%A1n-a11369237/">Linkedin<img src="/img/icons/linkedin icono.png" alt="Linkedin icono"></a></li>
+                    <li class="redes__img"><a href="https://www.instagram.com/drawniko3/">Instagram <img src="/img/icons/instagram.png" alt="Instagram icono"></a></li>
+                </ul>
+                    </div>
             </div>
-                <div class="presentacion__contenedor__redes">
-            <ul class="redes">
-                <li class="redes__img"><a href="https://github.com/Nicolas-Munoz-Bacian">Github <img src="img/icons/Github icono.png" alt="Icono Github"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="img/icons/linkedin (blanco).png" alt="Icono Linkedin"></a></li>
-                <li class="redes__img"><a href="https://www.instagram.com/drawniko3/">Instagram <img src="img/icons/Instagram (blanco).png" alt="Icono Instagram"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="img/icons/Curriculum vitae icono.png" alt="Icono Currículo"></a></li>
-            </ul>
+        </section>
+
+                <!-- Sección sobre mí -->
+    
+                <section class="sobre-mi" id="sobre-mi">
+                    <div class="presentacion__sobre_mi__contenedor">
+                        <div class="parrafo__sobre__mi">
+                            <h2 class="sobre-mi__titulo">SOBRE MÍ</h2>
+                            <p class="sobre-mi__texto">Busco utilizar mis conocimientos y habilidades de Diseño Digital en el área industrial o social para alcanzar
+                                 los objetivos en el área de diseño de la institución en que preste mis servicios.</p>
+                                 <p class="sobre-mi__descripción">
+                                    Soy alguién dinámico y habituado al trabajo bajo presión; con gran sentido de responsabilidad, así como con capacidad de generar valor 
+                                    agregado a la organización mediante creación de ideas e iniciativa propia para la resolución de problemas. 
+                                </p>
+                        </div>
+            
+                    </div>
+            
+                    </div>
+                    </div>
+                </section>
+            </section>
+
+
+        <div class="Contenido_central_volver_arriba">
+            <button class="btn_volver_arriba" id="volver-cabecera">Volver arriba</button>
+        </div>
+                    
+            <!-- Tu código HTML -->
+            <script>
+                const botonVolver = document.getElementById('volver-cabecera');
+          
+                botonVolver.addEventListener('click', () => {
+                  document.querySelector('.presentacion').scrollIntoView({ behavior: 'smooth' });
+                });
+        
+                
+        
+                const nombreInput = document.querySelector('input[name="nombre"]');
+                const form = document.querySelector('form');
+        
+                form.addEventListener('submit', (event) => {
+                    const nombre = nombreInput.value.trim();
+        
+                    if (nombre === '') {
+                        alert('El campo Nombre no debe estar vacío.');
+                        event.preventDefault();
+                    } else if (nombre.length > 50) {
+                        alert('El campo Nombre no debe tener más de 50 caracteres.');
+                        event.preventDefault();
+                    } else {
+                        // Enviar el correo electrónico
+                        emailjs.sendForm('service_id', 'template_id', form, 'user_id')
+                            .then((response) => {
+                                console.log('SUCCESS!', response.status, response.text);
+                                // Mostrar un mensaje de éxito al usuario
+                                alert('¡Mensaje enviado correctamente!');
+                                // Limpiar el formulario
+                                form.reset();
+                            })
+                            .catch((error) => {
+                                console.log('FAILED...', error);
+                                // Mostrar un mensaje de error al usuario
+                                alert('Error al enviar el mensaje. Por favor, inténtelo de nuevo más tarde.');
+                            });
+                    }
+                });
+              </script>
+        <!-- Sección de rodapie (FOOTER) -->
+    
+        <footer class="footer">
+            <div class="contenido_footer">
+                <div class="footer_text_contenido">
+                    <div class="derechos_de_autor_text">
+                        <h1><p class="p_footer">(+56) 9 4046 2468</p>
+                            <p class="p_footer">disenadornm@gmail.com</p>
+                            <p class="p_footer">©Drawniko. 2025.</p>
+                        </h1>
+                        <img class="presentación__logo__personal" src="/assets/Sello Nicolás (PNG).png" alt="Logo personal">
+                        <div class="presentación__enlaces__iconos">
+                                <a href="https://www.linkedin.com/in/nicol%C3%A1s-mu%C3%B1oz-baci%C3%A1n-a11369237/">
+                                <img src="/img/icons/linkedin icono.png" alt="Instagram icono" width="30px" height="30px"></a>
+    
+                                <a href="https://www.instagram.com/drawniko3/">
+                                <img src="/img/icons/instagram.png" alt="Linkedin icono" width="30px" height="30px"></a>
+                                
+                                <a href="https://github.com/Nicolas-Munoz-Bacian">
+                                <img src="/img/icons/logotipo-de-github.png" alt="Youtube icono" width="30px" height="30px"></a>
+    
+                        </div>
+                    </div>
                 </div>
-        </div>
-    </section>
-
-    <!-- Sección sobre mí -->
-    <section class="sobre-mi" id="sobre-mi">
-        <div class="presentacion__sobre_mi__contenedor">
-                <div class="parrafo__sobre__mi">
-                    <h2 class="sobre-mi__titulo">SOBRE MÍ</h2>
-                    <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-                    <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-                </div>
-        <!-- Firma opcional -->
-        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
-        </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- Sección de Habilidades -->
-    <section class="habilidades" id="habilidades">
-        <div class="presentacion__contenedor__habilidades">
-        <h2 class="habilidades__titulo">HABILIDADES</h2>
-        <ul class="habilidades__lista">
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="img/icons/HTML 5.png" alt="HTML">
-                <p class="habilidades__nombre">HTML 5</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="img/icons/Javascript.png" alt="JavaScript">
-                <p class="habilidades__nombre">JavaScript</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="img/icons/css-3.png" alt="CSS">
-                <p class="habilidades__nombre">CSS</p>
-            </li>
-        </ul>
-        </div>
-    </section>
-
-    <!-- Sección de Aficiones -->
-    <section class="aficiones" id="aficiones">
-        <div class="presentacion__aficiones">
-        <h2 class="aficiones__titulo">AFICIONES</h2>
-        <ul class="aficiones__lista">
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="img/icons/Dibujar.png" alt="Mano dibujando">
-                <p class="aficiones__nombre">Dibujar</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="img/icons/Audifonos bluetooth.png" alt="Oír música">
-                <p class="aficiones__nombre">Oír música</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="img/icons/Reproducir video.png" alt="Ver series">
-                <p class="aficiones__nombre">Ver series</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="img/icons/Ver una película.png" alt="Ver películas">
-                <p class="aficiones__nombre">Ver péliculas</p>
-            </li>
-        </ul>
-        </div>
-    </section>
-
-    <!-- Sección de Formación académica -->
-    <section class="formacion" id="formacion">
-        <div class="Formacion_academica__contenedor">
-        <h2 class="formacion__titulo">FORMACIÓN ACADÉMICA</h2>
-        <ul class="formacion__lista">
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="img/Inacap Logotipo.png" alt="UFPR">
-                <div class="formacion__parrafo">
-                    <h3 class="formacion__nombre">Diseño gráfico profesional</h3>
-                    <p class="formacion__detalle">2018 - 2022 INACAP</p>
-                </div>
-            </li>
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
-                <div>
-                    <h3 class="formacion__nombre">Formación en Programación</h3>
-                    <p class="formacion__detalle">2023 - en curso</p>
-                </div>
-            </li>
-        </ul>
-        </div>
-    </section>
-
-    <!-- Sección de Proyectos -->
-    <section class="proyectos" id="proyectos">
-        <h2 class="proyectos__titulo">EXPERIENCIA PROFESIONA</h2>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Diseñador gráfico</h3>
-            <p class="proyectos__descripcion">Por 3 meses en la Pyme internacional de CircularTec, Iquique.</p>
-        </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-        </div>
-
-        <h2>Galeria</h2>
-
-<h4>Aquí algunos de mis trabajos destacados</h4>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
-    </section>
-
-    <!-- Sección de Contacto -->
-<footer class="Pie_de_pagina">
-    <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">CONTACTO</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
-    </section>
-</footer>
-
+            </div>
+        </footer>
+        <script src="script.js"></script>
 </body>
-    <script src="script.js"></script>
 </html>
