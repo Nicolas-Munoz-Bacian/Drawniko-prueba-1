@@ -173,6 +173,20 @@ a{
     .desktop {display: none;}
     .tablet {}
     .movil {display: none;}
+    .presentación__logo__personal {
+        width: 15%;
+    }
+
+    .presentación__enlaces__iconos {
+        width: auto;
+        gap: 15px;
+    }
+
+    .derechos_de_autor_text {
+        font-size: 70%;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /**Escritorio**/
@@ -333,59 +347,59 @@ font-weight: bold;
 
 /*------------------------------ FOOTER (RODAPIE) ---------------------------------*/
 
-.footer{
+.footer {
     background-color: var(--color-primario);
-    padding: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: auto;
+    width: 100%;
 }
 
-.contenido_footer{
+.contenido_footer {
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.presentación_enlaces{
+.footer_text_contenido {
     display: flex;
-    justify-content: center;
-}
-
-.footer_text_contenido{
-    margin-left: auto;
-    justify-content: center;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: var(--color-terciario);
+    width: 100%;
 }
 
-.presentación__logo__personal{
+.derechos_de_autor_text {
     display: flex;
-    flex-wrap: wrap;
-    width: 6%;
-    height:auto;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.presentación__enlaces__iconos{
-    display: flex;
-    justify-content: center;
-    width: 5%;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
-.derechos_de_autor_text{
-    font-size: 50%;
+.texto_footer p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight:bold ;
     color: black;
     font-family: var(--fuente-calibri);
+}
+
+.presentación__logo__personal {
+    width: 45px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.presentación__enlaces__iconos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .Contenido_de_lado {
