@@ -646,59 +646,57 @@ a{
 
 /*------------------------------ FOOTER (RODAPIE) ---------------------------------*/
 
-.footer {
+.footer{
     background-color: var(--color-primario);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    padding: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: auto;
-    width: 100%;
 }
 
-.contenido_footer {
+.contenido_footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
 }
 
-.footer_text_contenido {
+.presentación_enlaces{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+}
+
+.footer_text_contenido{
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
     color: var(--color-terciario);
-    width: 100%;
 }
 
-.derechos_de_autor_text {
+.presentación__logo__personal{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.presentación__enlaces__iconos{
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    height: auto;
     gap: 10px;
 }
 
-.texto_footer p {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight:bold ;
+.derechos_de_autor_text{
+    font-size: 50%;
     color: black;
     font-family: var(--fuente-calibri);
-}
-
-.presentación__logo__personal {
-    width: 45px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.presentación__enlaces__iconos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .Contenido_de_lado {
